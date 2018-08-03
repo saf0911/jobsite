@@ -22,18 +22,23 @@ render() {
             <button onClick={this.toggleView.bind(this)} className='binocularButton'>
               <div className={this.state.showHideView}>
                 <div className='binocularView'>
-                  <h6 className='binocluarText'>
-                    I am looking for you too
-                  </h6>
-                  <a className="resume-download"
-                    href="/static/ScottFosterResume.pdf" download="Scott-Foster-Resume">
-                      Download PDF Resume
-                  </a>
-                </div>
+                <h6 className='binocluarText'>
+                  I am looking for you too
+                </h6>
+                <a className="resume-download"
+                  href='/static/ScottFosterResume.pdf" download="Scott-Foster-Resume'>
+                    Download PDF Resume
+                </a>
+                <Link
+                  img='/static/img/linkedin.png'
+                  href='https://www.linkedin.com/in/saf0911'>
+                  My Linkedin
+                </Link>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
+      </div>
 
         <style jsx>{`
           @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Quicksand');
@@ -68,7 +73,6 @@ render() {
           }
 
           .buttonContainer {
-            position: fixed;
             height: 100%;
             width: 100%;
           }
@@ -84,40 +88,39 @@ render() {
             margin-left: 40%;
             padding: 10%;
             border-radius: 50%;
-            opacity: 0;
-            z-index: 1;
+            background-color: rgba(0,0,0,0.2);
+            outline: none;
           }
 
-
-
           .show {
-            visibility: visable;
-
+            display: absolute;
+            opacity: 1;
+            height: 75%;
+            width: 75%;
           }
 
           .hidden {
-            visibility: hidden;
             display: none;
+            opacity: 0;
           }
 
           .binocularView {
-            transform: scale(5);
+            padding: 25%;
+            margin: 0;
+            transform: scale(5, 5);
             transform: 100s ease-in-out;
-            opacity: 1;
             background-attachment: inherit;
             background-image: url('/static/img/DSCF6548.jpg');
-            background-size: cover;
-            position: fixed;
-            top: 20%;
-            left: 5%;
-            width: 35%;
-            display:block;
-            align-items:top;
+            background-size: 100% 75%;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+
           }
 
           .binocluarText {
             color: black;
-            width:
+            opacity: 1;
 
           }
 
@@ -134,7 +137,7 @@ render() {
 }
 
 toggleView() {
-    var css = (this.state.showHideView === "hidden") ? "hidden" : "show";
+    var css = (this.state.showHideView === "hidden") ? "show" : "hidden";
     this.setState({"showHideView":css});
 }
 }
