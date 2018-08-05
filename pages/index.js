@@ -13,9 +13,9 @@ const Home = () => (
           <div className='buttonContainer'>
             <button  className='binocularButton'>
               <div className='binocularView'>
-                <h6 className='binocluarText'>
-                  I am looking for you too
-                </h6>
+                <h1 className='binocluarText'>
+                  <span>I am looking for you too</span>
+                </h1>
                 <a className="resume-download"
                   href="/static/ScottFosterResume.pdf" download="Scott-Foster-Resume">
                     Download PDF Resume
@@ -49,12 +49,9 @@ const Home = () => (
           width: 100%;
           position: fixed;
           background-image: url('/static/img/binoculars-fog-foggy-1136815.jpg');
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-          background-size: cover;;
-
-
+          background-size: 100%;
+          background-color: #272729;
+          background-repeat: no-repeat;
         }
 
         .buttonContainer {
@@ -74,31 +71,49 @@ const Home = () => (
           margin-left: 40%;
           padding: 10%;
           border-radius: 50%;
-          opacity: 0;
           z-index: 1;
+          border: 0;
+          background-color: rgba(0,0,0,0);
         }
 
 
         .binocularView {
-          transform: scale(5);
-          transform: 100s ease-in-out;
-          opacity: 1;
+          transform: translateX(-50%) scale(0.25);
           background-attachment: inherit;
           background-image: url('/static/img/DSCF6548.jpg');
           background-size: cover;
           position: relative;
           position: fixed;
-          top: 20%;
-          left: 5%;
-          width: 35%;
-          display:none;
+          top: 10%;
+          left: 50%;
+          width: 800px;
+          height: 700px;
           align-items:top;
+          opacity: 0;
+          transition: opacity 0.6s, transform 0.6s;
+          pointer-events: none;
+          border-radius: 50%;
+          border: 3px solid #555;
+
+        }
+
+        .binocularButton:hover .binocularView {
+          opacity: 1;
+          pointer-events: all;
+          transform: translateX(-50%) scale(1);
+          box-shadow: 20px 20px 60px rgba(0,0,0,0.6);
         }
 
         .binocluarText {
           color: black;
-          width:
+          
+        }
 
+        .binocluarText span {
+          display: inline-block;
+          background: rgba(255,255,255,0.7);
+          padding: 5px 20px;
+          border-radius: 4px;
         }
 
         .resume-download {
