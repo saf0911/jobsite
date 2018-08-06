@@ -20,11 +20,11 @@ const Home = () => (
                   href="/static/ScottFosterResume.pdf" download="Scott-Foster-Resume">
                     Download PDF Resume
                 </a>
-                <Link
+                <a
                   className='linkedinButton'
                   href='https://www.linkedin.com/in/saf0911'>
-                  My Linkedin
-                </Link>
+
+                </a>
               </div>
             </button>
           </div>
@@ -110,8 +110,10 @@ const Home = () => (
         }
 
         .binocluarText {
+          position: relative;
           color: black;
-
+          margin-top: 20%;
+          margin-left: -53%;
         }
 
         .binocluarText span {
@@ -122,16 +124,23 @@ const Home = () => (
         }
 
         .resume-download {
+          position: relative;
           text-decoration: none;
           background: #054A25;
           color: white;
-          padding: 5px;
+          margin-top: 10%;
+          margin-left: -35%;
+          padding: 10px;
           justify-content:flex-start;
         }
 
         .linkedinButton {
+          position: relative;
+          background-attachment: inherit;
           background-image: url('/static/img/linkedin.png');
-          padding: 5px;
+          margin-top: 20%;
+          margin-left: -42.5%;
+          padding: 7%;
         }
     `}</style>
     </div>
