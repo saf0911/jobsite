@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production server.js"
+    "start": "next start"
   },
   "dependencies": {
     "next": "^6.1.1",
