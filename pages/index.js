@@ -20,6 +20,11 @@ const Home = () => (
                   href="/static/ScottFosterResume.pdf" download="Scott-Foster-Resume">
                     Download PDF Resume
                 </a>
+                <Link
+                  className='linkedinButton'
+                  href='https://www.linkedin.com/in/saf0911'>
+                  My Linkedin
+                </Link>
               </div>
             </button>
           </div>
@@ -106,7 +111,7 @@ const Home = () => (
 
         .binocluarText {
           color: black;
-          
+
         }
 
         .binocluarText span {
@@ -122,6 +127,11 @@ const Home = () => (
           color: white;
           padding: 5px;
           justify-content:flex-start;
+        }
+
+        .linkedinButton {
+          background-image: url('/static/img/linkedin.png');
+          padding: 5px;
         }
     `}</style>
     </div>
