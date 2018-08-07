@@ -23,7 +23,7 @@ const Home = () => (
                 <a
                   className='linkedinButton'
                   href='https://www.linkedin.com/in/saf0911'>
-
+                  <img url='In-2C-94px-R.png' />
                 </a>
               </div>
             </button>
@@ -100,14 +100,16 @@ const Home = () => (
           transition: opacity 0.6s, transform 0.6s;
           pointer-events: none;
           border-radius: 50%;
-          border: 3px solid #555;
+          border: 3px solid #0D6697;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(5, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          grid-column-gap: 10px;
+          grid-row-gap: 15px;
           grid-template-areas:
-          '. binText . . .'
-          'resume . . . .'
-          'linkedIn . . . .'
+          'binText binText binText  '
+          'resume . .'
+          'linkedIn . .'
         }
 
         .binocularButton:hover .binocularView {
@@ -126,22 +128,20 @@ const Home = () => (
 
         .binocluarText span {
           display: inline-block;
-          background: rgba(255,255,255,0.7);
-          margin-top: 10%;
-          margin-left: 40%;
-          padding: 5px 20px;
+          // margin-top: 8%;
+          margin-left: 45%;
+          // padding: 5px 20px;
           border-radius: 4px;
           grid-area: binText;
-          justify-content: left;
-          border: 3px solid #0D6697;
+          // place-self: center;
           font-family: 'EB Garamond', serif;
+          font-size: 1.5em;
+          justify-self: end;
         }
 
         .resume-download {
           position: relative;
           display: inline-block;
-          margin-top: 10%;
-          margin-left: 10%;
           border-radius: 4px;
           text-decoration: none;
           background: rgba(246,246,246,0.2);
@@ -149,8 +149,10 @@ const Home = () => (
           grid-area: resume;
           justify-content: left;
           border: 3px solid #0D6697;
-          font-size: 2.5em;
+          font-size: 2em;
           font-family: 'EB Garamond', serif;
+          width: 50%;
+          justify-self: end;
         }
 
         .resume-download span {
@@ -162,13 +164,11 @@ const Home = () => (
           display: inline-block;
           position: relative;
           background-size: cover;
-          background-image: url('/static/img/linkedin.png');
-          margin-top: 10%;
-          margin-left: 10%;
+          background-image: url('/static/img/linked.png');
           border-radius: 4px;
-          padding: 10%;
+          justify-self: end;
           grid-area: linkedIn;
-
+          width: 50%;
         }
     `}</style>
     </div>
