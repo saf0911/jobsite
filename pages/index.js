@@ -10,6 +10,7 @@ const Home = () => (
         <div className='firstPage'>
           <h1> Looking for a Project Manager? </h1>
           <h2> Take a peek inside </h2>
+          <h4> (Hover over binoculars for more) </h4>
           <div className='buttonContainer'>
             <button  className='binocularButton'>
               <div className='binocularView'>
@@ -45,6 +46,12 @@ const Home = () => (
         }
 
         h2 {
+          text-align: center;
+          justify-self: center;
+          font-family: 'EB Garamond', serif;
+        }
+
+        h4 {
           text-align: center;
           justify-self: center;
           font-family: 'EB Garamond', serif;
@@ -144,8 +151,8 @@ const Home = () => (
           display: inline-block;
           border-radius: 4px;
           text-decoration: none;
-          background: rgba(246,246,246,0.2);
-          color: black;
+          background: rgba(17,120,179,0.2);
+          color: white;
           grid-area: resume;
           justify-content: left;
           border: 3px solid #0D6697;
