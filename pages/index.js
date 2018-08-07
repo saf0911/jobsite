@@ -30,7 +30,7 @@ const Home = () => (
           </div>
       </div>
 
-      <style jsx>{`
+      <style jsx global>{`
         @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Quicksand');
         @font-face {
           font-family: 'EB Garamond', serif;
