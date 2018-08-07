@@ -128,7 +128,7 @@ const Home = () => (
           text-decoration: none;
           background: #054A25;
           color: white;
-          margin-top: 10%;
+          margin-top: 7%;
           margin-left: -35%;
           padding: 10px;
           justify-content:flex-start;
@@ -136,9 +136,9 @@ const Home = () => (
 
         .linkedinButton {
           position: relative;
-          background-attachment: inherit;
+          background-attachment: fixed;
           background-image: url('/static/img/linkedin.png');
-          margin-top: 20%;
+          margin-top: 15%;
           margin-left: -42.5%;
           padding: 7%;
         }
