@@ -99,7 +99,13 @@ const Home = () => (
           pointer-events: none;
           border-radius: 50%;
           border: 3px solid #555;
-
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(5, 1fr);
+          grid-template-areas:
+          '. binText . . .'
+          'resume . . . .'
+          'linkedIn . . . .'
         }
 
         .binocularButton:hover .binocularView {
@@ -112,35 +118,53 @@ const Home = () => (
         .binocluarText {
           position: relative;
           color: black;
-          margin-top: 20%;
-          margin-left: -53%;
+          margin-top: 40%
+
         }
 
         .binocluarText span {
           display: inline-block;
           background: rgba(255,255,255,0.7);
+          margin-top: 10%;
+          margin-left: 40%;
           padding: 5px 20px;
           border-radius: 4px;
+          grid-area: binText;
+          justify-content: left;
+          border: 3px solid #0D6697;
         }
 
         .resume-download {
           position: relative;
+          display: inline-block;
+          margin-top: 10%;
+          margin-left: 10%;
+          border-radius: 4px;
           text-decoration: none;
-          background: #054A25;
-          color: white;
-          margin-top: 7%;
-          margin-left: -35%;
-          padding: 10px;
-          justify-content:flex-start;
+          background: rgba(246,246,246,0.2);
+          color: black;
+          grid-area: resume;
+          justify-content: left;
+          border: 3px solid #0D6697;
+          font-size: 2.5em;
+        }
+
+        .resume-download span {
+          font-size: 1em;
+          text-align: center;
         }
 
         .linkedinButton {
+          display: inline-block;
           position: relative;
-          background-attachment: fixed;
+          background-size: cover;
           background-image: url('/static/img/linkedin.png');
-          margin-top: 15%;
-          margin-left: -42.5%;
-          padding: 7%;
+          margin-top: 10%;
+          margin-left: 10%;
+          border-radius: 4px;
+          padding: 8%;
+          grid-area: linkedIn;
+
         }
     `}</style>
     </div>
