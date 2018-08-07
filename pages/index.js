@@ -17,7 +17,7 @@ const Home = () => (
                   <span>I am looking for you too</span>
                 </h1>
                 <a className="resume-download"
-                  href="/static/ScottFosterResume.pdf" download="Scott-Foster-Resume">
+                  href="/static/resume/ScottFosterResume.pdf" download="Scott-Foster-Resume">
                     Download PDF Resume
                 </a>
                 <a
@@ -37,6 +37,7 @@ const Home = () => (
           src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
         }
 
+
         h1 {
           text-align: center;
           justify-self: center;
@@ -52,11 +53,12 @@ const Home = () => (
         .firstPage {
           height: 100%;
           width: 100%;
-          position: fixed;
+          position: absolute;
           background-image: url('/static/img/binoculars-fog-foggy-1136815.jpg');
           background-size: 100%;
           background-color: #272729;
           background-repeat: no-repeat;
+          margin: 0;
         }
 
         .buttonContainer {
@@ -132,6 +134,7 @@ const Home = () => (
           grid-area: binText;
           justify-content: left;
           border: 3px solid #0D6697;
+          font-family: 'EB Garamond', serif;
         }
 
         .resume-download {
@@ -147,6 +150,7 @@ const Home = () => (
           justify-content: left;
           border: 3px solid #0D6697;
           font-size: 2.5em;
+          font-family: 'EB Garamond', serif;
         }
 
         .resume-download span {
@@ -162,7 +166,7 @@ const Home = () => (
           margin-top: 10%;
           margin-left: 10%;
           border-radius: 4px;
-          padding: 8%;
+          padding: 10%;
           grid-area: linkedIn;
 
         }
