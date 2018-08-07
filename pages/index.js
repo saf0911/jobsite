@@ -15,7 +15,7 @@ const Home = () => (
             <button  className='binocularButton'>
               <div className='binocularView'>
                 <h1 className='binocluarText'>
-                  <span>I am looking for you too</span>
+                  <span>You came to the right place</span>
                 </h1>
                 <a className="resume-download"
                   href="/static/resume/" download="Scott-Foster-Resume">
