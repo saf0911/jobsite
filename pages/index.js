@@ -18,7 +18,7 @@ const Home = () => (
                   <span>I am looking for you too</span>
                 </h1>
                 <a className="resume-download"
-                  href="/static/resume/ScottFosterResume.pdf" download="Scott-Foster-Resume">
+                  href="/static/resume/" download="Scott-Foster-Resume">
                     Download PDF Resume
                 </a>
                 <a
@@ -152,7 +152,9 @@ const Home = () => (
           border-radius: 4px;
           text-decoration: none;
           background: rgba(17,120,179,0.2);
-          color: white;
+          background-image: url('/static/img/downloadarrow.jpeg');
+          background-size: cover;
+          color: #97BE4B;
           grid-area: resume;
           justify-content: left;
           border: 3px solid #0D6697;
