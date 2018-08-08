@@ -18,7 +18,7 @@ const Home = () => (
                   <span>You came to the right place</span>
                 </h1>
                 <a className="resume-download"
-                  href="/static/resume/ScottFosterResume.pdf" download="ScottFosterResume.pdf">
+                  href="/static/resume/ScottFosterResume1.pdf" download="ScottFosterResume.pdf">
                     Download PDF Resume
                 </a>
                 <a
