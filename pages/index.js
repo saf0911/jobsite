@@ -154,7 +154,7 @@ const Home = () => (
           background: rgba(17,120,179,0.2);
           background-image: url('/static/img/downloadarrow.jpeg');
           background-size: cover;
-          color: #97BE4B;
+          color: black;
           grid-area: resume;
           justify-content: left;
           border: 3px solid #0D6697;
