@@ -8,7 +8,7 @@ const Home = () => (
 
   <div>
         <div className='firstPage'>
-          <h1> Looking for a Project Manager? </h1>
+          <h1> Looking for a Project Coordinator? </h1>
           <h2> Take a peek inside </h2>
           <h4> (Hover over binoculars for more) </h4>
           <div className='buttonContainer'>
