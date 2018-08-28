@@ -98,7 +98,7 @@ const Home = () => (
           background-size: cover;
           position: relative;
           position: fixed;
-          top: 10%;
+          top: 0%;
           left: 50%;
           width: 800px;
           height: 700px;
