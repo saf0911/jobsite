@@ -38,7 +38,6 @@ const Home = () => (
           src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
         }
 
-
         h1 {
           text-align: center;
           justify-self: center;
@@ -89,7 +88,6 @@ const Home = () => (
           border: 0;
           background-color: rgba(0,0,0,0);
         }
-
 
         .binocularView {
           transform: translateX(-50%) scale(0.25);
@@ -179,6 +177,112 @@ const Home = () => (
           grid-area: linkedIn;
           width: 50%;
         }
+
+
+
+
+
+
+
+
+        @media only screen and (min-width : 321px) and (max-width: 511px) {
+          .firstPage {
+            background-color: rgb(200, 225, 235);
+            background-image: none;
+          }
+          .buttonContainer {
+            background-image: url('/static/img/binoculars-fog-foggy-1136815.jpg');
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0;
+          }
+          .binocularButton {
+            position: relative;
+
+          }
+
+          .binocularView {
+            width: 100%;
+            height: 90%;
+            background-position: 15%;
+          }
+
+          .binocularButton:hover .binocularView .binocularButton:active{
+            opacity: 1;
+            pointer-events: all;
+            transform: translateX(-50%) scale(1);
+            box-shadow: 20px 20px 60px rgba(0,0,0,0.6);
+          }
+
+          .binocluarText span {
+            display: inline-block;
+            margin-left: 55%;
+            border-radius: 4px;
+            grid-area: binText;
+            // place-self: center;
+            font-family: 'EB Garamond', serif;
+            font-size: 1.5em;
+            justify-self: end;
+
+          }
+
+          .resume-download {
+            position: relative;
+            display: inline-block;
+            border-radius: 4px;
+            text-decoration: none;
+            background: rgba(17,120,179,0.2);
+            background-image: url('/static/img/downloadarrow.jpeg');
+            background-size: cover;
+            color: black;
+            grid-area: resume;
+            justify-content: left;
+            border: 3px solid #0D6697;
+            font-size: 2em;
+            font-family: 'EB Garamond', serif;
+            width: 75%;
+            justify-self: end;
+            margin-right: -10%;
+          }
+
+          .resume-download span {
+            font-size: 1em;
+            text-align: center;
+          }
+
+          .linkedinButton {
+            display: inline-block;
+            position: relative;
+            background-size: cover;
+            background-image: url('/static/img/linked.png');
+            border-radius: 4px;
+            justify-self: end;
+            grid-area: linkedIn;
+            width: 50%;
+            margin-right: -10%;
+          }
+
+        }
+
+        @media only screen and (min-width : 512px) and (max-width: 767px) {
+
+        }
+
+        @media only screen and (min-width : 768px) {
+
+
+
+
+
+
+
+
+
+
+      }
     `}</style>
     </div>
 
