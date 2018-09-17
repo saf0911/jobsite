@@ -32,6 +32,9 @@ const Home = () => (
       </div>
 
       <style jsx global>{`
+        body {
+          margin: 0;
+        }
         @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Quicksand');
         @font-face {
           font-family: 'EB Garamond', serif;
