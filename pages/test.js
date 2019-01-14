@@ -16,7 +16,7 @@ render() {
 
       <div>
         <div className='firstPage'>
-          <h1> Looking for a Project Manager? </h1>
+          <h1> Looking for a Project Manager? I am here.</h1>
           <h2> Take a peek inside </h2>
           <div className='buttonContainer'>
             <button onClick={this.toggleView.bind(this)} className='binocularButton'>
@@ -68,6 +68,7 @@ render() {
               -moz-background-size: cover;
               -o-background-size: cover;
             background-size: cover;;
+            background-color: rgb(245, 247, 255);
 
 
           }
