@@ -58,9 +58,10 @@ const Home = () => (
 
         @media only screen and (min-width : 321px) and (max-width: 511px) {
           body {
-            background-color: rgb(200, 225, 235);
+            background-color: rgb(244, 247, 255);
             background-image: none;
           }
+
           .firstPage {
             background-color: rgb(244, 247, 255);
             background-image: none;
@@ -95,25 +96,27 @@ const Home = () => (
             grid-area: binText;
             // place-self: center;
             font-family: 'EB Garamond', serif;
-            font-size: 1.5em;
+            font-size: .5em;
             justify-self: end;
+          }
+          .binocularText h1 {
+            font-size: 1em;
           }
           .resume-download {
             position: relative;
-            display: inline-block;
+            display: block;
             border-radius: 4px;
             text-decoration: none;
             background: rgba(17,120,179,0.2);
             background-image: url('/static/img/downloadarrow.jpeg');
             background-size: cover;
             color: black;
-            grid-area: resume;
             justify-content: left;
             border: 3px solid #0D6697;
-            font-size: 2em;
+            font-size: 1em;
             font-family: 'EB Garamond', serif;
             width: 75%;
-            justify-self: end;
+            justify-self: right;
             margin-right: -10%;
           }
           .resume-download span {
@@ -132,6 +135,7 @@ const Home = () => (
             margin-right: -10%;
           }
         }
+
         @media only screen and (min-width : 512px) and (max-width: 767px) {
           .firstPage {
             height: 100%;
@@ -245,6 +249,7 @@ const Home = () => (
             width: 50%;
           }
         }
+        
         @media only screen and (min-width : 768px) {
           .firstPage {
             height: 100%;
