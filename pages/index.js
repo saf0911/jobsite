@@ -146,6 +146,7 @@ const Home = () => (
             background-image: url('/static/img/downloadarrow.jpeg');
             background-size: contain;
             background-repeat: no-repeat;
+            background-color: white;
             color: black;
             justify-content: left;
             border: 3px solid #0D6697;
@@ -265,6 +266,7 @@ const Home = () => (
             background: rgba(17,120,179,0.2);
             background-image: url('/static/img/downloadarrow.jpeg');
             background-size: cover;
+            background-color: white;
             color: black;
             grid-area: resume;
             justify-content: left;
@@ -379,6 +381,7 @@ const Home = () => (
             background: rgba(17,120,179,0.2);
             background-image: url('/static/img/downloadarrow.jpeg');
             background-size: cover;
+            background-color: white;
             color: black;
             grid-area: resume;
             justify-content: left;
