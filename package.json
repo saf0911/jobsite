@@ -2,8 +2,8 @@
   "name": "create-next-example-app",
   "scripts": {
     "dev": "next",
-    "build": "next build -P $PORT",
-    "start": "next start",
+    "build": "next build",
+    "start": "next start -P $PORT",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
