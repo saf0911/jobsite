@@ -1,9 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 
-
-
-
 const Home = () => (
 
   <div>
@@ -38,7 +35,7 @@ const Home = () => (
         @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Quicksand');
         @font-face {
           font-family: 'EB Garamond', serif;
-          src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
+          src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype');
         }
         h1 {
           text-align: center;
@@ -56,7 +53,7 @@ const Home = () => (
           font-family: 'EB Garamond', serif;
         }
 
-        @media only screen and (min-width : 321px) and (max-width: 511px) {
+        @media only screen and (min-width: 321px) and (max-width: 511px) {
           body {
             background-color: rgb(244, 247, 255);
             background-image: none;
@@ -76,63 +73,106 @@ const Home = () => (
             margin: 0;
           }
           .binocularButton {
+            height: 9%;
+            width: 9%
             position: relative;
+            color: white;
+            cursor: pointer;
+            justify-content: center;
+            margin-top: 25%;
+            margin-left: 40%;
+            padding: 10%;
+            border-radius: 50%;
+            z-index: 1;
+            border: 0;
+            background-color: rgba(0,0,0,0);
           }
           .binocularView {
+            transform: translateX(-50%) scale(0.25);
+            background-attachment: inherit;
+            background-image: url('/static/img/DSCF6548.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 10%;
+            left: 50%;
             width: 100%;
-            height: 90%;
-            background-position: 15%;
+            height: 75%;
+            align-items:top;
+            opacity: 0;
+            transition: opacity 0.6s, transform 0.6s;
+            pointer-events: none;
+            border-radius: 50%;
+            border: 3px solid #0D6697;
+
           }
-          .binocularButton:hover .binocularView .binocularButton:active{
+          .binocularButton:hover  .binocularView  {
             opacity: 1;
             pointer-events: all;
             transform: translateX(-50%) scale(1);
             box-shadow: 20px 20px 60px rgba(0,0,0,0.6);
           }
+          .binocularButton:active .binocularView {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateX(-50%) scale(1);
+            box-shadow: 20px 20px 60px rgba(0,0,0,0.6);
+          }
+
           .binocluarText span {
             display: inline-block;
-            margin-left: 55%;
+            margin-top: 10%;
             border-radius: 4px;
             grid-area: binText;
             // place-self: center;
             font-family: 'EB Garamond', serif;
-            font-size: .5em;
+            font-size: 1em;
             justify-self: end;
+            color: black;
           }
-          .binocularText h1 {
+          .binocularText {
+            position: relative;
+
             font-size: 1em;
           }
           .resume-download {
             position: relative;
             display: block;
+            margin-top: 10%;
+            margin-left 10%;
             border-radius: 4px;
             text-decoration: none;
             background: rgba(17,120,179,0.2);
             background-image: url('/static/img/downloadarrow.jpeg');
-            background-size: cover;
+            background-size: contain;
+            background-repeat: no-repeat;
             color: black;
             justify-content: left;
             border: 3px solid #0D6697;
             font-size: 1em;
             font-family: 'EB Garamond', serif;
-            width: 75%;
+            width: 25%;
+            height: 25%;
             justify-self: right;
-            margin-right: -10%;
+
           }
           .resume-download span {
             font-size: 1em;
             text-align: center;
           }
           .linkedinButton {
-            display: inline-block;
+            display: block;
             position: relative;
-            background-size: cover;
+            background-size: contain;
             background-image: url('/static/img/linked.png');
+            background-repeat: no-repeat;
             border-radius: 4px;
-            justify-self: end;
+            justify-self: right;
             grid-area: linkedIn;
-            width: 50%;
-            margin-right: -10%;
+            width: 25%;
+            height: 25%;
+            margin-top: 10%;
+            margin-left: 10%;
           }
         }
 
@@ -159,7 +199,7 @@ const Home = () => (
             color: white;
             cursor: pointer;
             justify-content: center;
-            margin-top: 12%;
+            margin-top: -5%;
             margin-left: 40%;
             padding: 10%;
             border-radius: 50%;
@@ -176,8 +216,8 @@ const Home = () => (
             position: fixed;
             top: 0%;
             left: 50%;
-            width: 800px;
-            height: 700px;
+            width: 100%;
+            height: 100%;
             align-items:top;
             opacity: 0;
             transition: opacity 0.6s, transform 0.6s;
@@ -249,7 +289,7 @@ const Home = () => (
             width: 50%;
           }
         }
-        
+
         @media only screen and (min-width : 768px) {
           .firstPage {
             height: 100%;
