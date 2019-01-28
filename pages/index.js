@@ -5,7 +5,7 @@ const Home = () => (
 
   <div>
         <div className='firstPage'>
-          <h1> Looking for a Project Coordinator? </h1>
+          <h1> Looking for a Front End Developer? </h1>
           <h2> Take a peek inside </h2>
           <h4> (Hover over binoculars for more press if on mobile) </h4>
           <div className='buttonContainer'>
